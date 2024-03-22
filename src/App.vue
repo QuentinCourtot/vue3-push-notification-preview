@@ -9,8 +9,8 @@
 </template>
 
 <script>
-    import IphonePreview from './components/IphonePreview';
-    import AndroidPreview from './components/AndroidPreview';
+    import IphonePreview from './components/IphonePreview.vue';
+    import AndroidPreview from './components/AndroidPreview.vue';
 
     export default {
         components: {

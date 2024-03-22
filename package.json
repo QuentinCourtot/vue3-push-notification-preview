@@ -30,19 +30,21 @@
     "url": "https://github.com/nenadjovanoski/vue-push-notification-preview/issues"
   },
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --target lib --name vue-push-notification-preview src/components/index.js && rm ./dist/demo.html",
-    "publish": "bash npm_publish.sh"
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore --fix src"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^5.0.1",
-    "@vue/cli-service": "^5.0.1",
+    "@vitejs/plugin-vue": "^1.6.1",
     "sass": "^1.29.0",
-    "sass-loader": "^10.1.0",
-    "vue": "^2.6.11",
-    "vue-template-compiler": "^2.6.11"
+    "vite": "^2.5.4",
+    "vue": "^3.4.21",
+    "@vue/compat": "^3.4.21",
+    "@vue/compiler-sfc": "^3.4.21"
   },
-  "peerDependencies": {
-    "vue": "^2.6.x"
+  "dependencies": {
+    "eslint": "^8.57.0",
+    "eslint-plugin-vue": "^8.7.1"
   }
 }
