@@ -22,8 +22,8 @@ npm i vue-push-notification-preview
 Make it available anywhere in your Vue application.
 
 ```js
-import { AndroidPreview, IphonePreview } from 'vue-push-notification-preview';
-import 'vue-push-notification-preview/src/assets/devices.scss';
+import { AndroidPreview, IphonePreview } from 'vue3-push-notification-preview';
+import 'vue3-push-notification-preview/src/assets/devices.scss';
 
 Vue.component('AndroidPreview', AndroidPreview);
 Vue.component('IphonePreview', IphonePreview);
@@ -34,8 +34,8 @@ Explicitly register it to a component you want to use it in.
 
 ```vue
 <script>
-  import { AndroidPreview, IphonePreview } from 'vue-push-notification-preview';
-  import 'vue-push-notification-preview/src/assets/devices.scss';
+  import { AndroidPreview, IphonePreview } from 'vue3-push-notification-preview';
+  import 'vue3-push-notification-preview/src/assets/devices.scss';
 
   export default {
     components: {
@@ -109,5 +109,5 @@ Both `AndroidPreview` and `IphonePreview` components can be customized through S
 
 | Component         | File path                                                         |
 | ---               | ---                                                               |
-| AndroidPreview    | `vue-push-notification-preview/src/assets/devices/pixel_4.scss`   |
-| IphonePreview     | `vue-push-notification-preview/src/assets/devices/iphone_x.scss`  |
+| AndroidPreview    | `vue3-push-notification-preview/src/assets/devices/pixel_4.scss`   |
+| IphonePreview     | `vue3-push-notification-preview/src/assets/devices/iphone_x.scss`  |

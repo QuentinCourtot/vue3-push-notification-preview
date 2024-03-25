@@ -1,7 +1,7 @@
 {
-  "name": "vue-push-notification-preview",
+  "name": "vue3-push-notification-preview",
   "description": "A library to preview the push notifications on iOS and Android devices",
-  "version": "2.3.0",
+  "version": "3.0.0",
   "author": "Quentin Courtot <quentin.courtot@gmail.com>",
   "license": "MIT",
   "keywords": [
@@ -16,7 +16,13 @@
     "ios"
   ],
   "private": false,
-  "main": "dist/vue-push-notification-preview.umd.min.js",
+  "main": "./dist/vue3-push-notification-preview.umd.js",
+  "exports": {
+    ".": {
+      "import": "./dist/vue3-push-notification-preview.es.js",
+      "require": "./dist/vue3-push-notification-preview.umd.js"
+    }
+  },
   "files": [
     "dist/*",
     "src/components/*",

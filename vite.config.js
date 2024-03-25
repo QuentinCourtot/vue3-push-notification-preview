@@ -12,8 +12,16 @@ export default defineConfig({
   build: {
     lib: {
       entry: path.resolve(__dirname, 'src/components/index.js'),
-      name: 'vue-push-notification-preview',
-      filename: 'vue-push-notification-preview'
-    }
+      name: 'vue3-push-notification-preview',
+      filename: 'vue3-push-notification-preview'
+    },
+    rollupOptions: {
+      external: ['vue'],
+      output: {
+        globals: {
+          vue: 'Vue',
+        },
+      },
+    },
   }
 })
