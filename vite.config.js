@@ -6,16 +6,7 @@ export default defineConfig({
   plugins: [vue()],
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "./src"),
-      vue: '@vue/compat'
+      "@": path.resolve(__dirname, "./src")
     },
-  },
-  base: './',
-  css: {
-    preprocessorOptions: {
-        scss: {
-            quietDeps: true
-        },
-    }
   }
 })

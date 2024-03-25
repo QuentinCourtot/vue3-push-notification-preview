@@ -19,3 +19,5 @@
         }
     }
 </script>
+
+<style src="@/assets/devices.scss" lang="scss"></style>
